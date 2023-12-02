@@ -1,0 +1,103 @@
+@import '../../app.scss';
+
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    overflow: hidden;
+    position: relative;
+
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+        height: 100%;
+
+
+        .textContainer {
+            height: 100%;
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+
+            h2 {
+                letter-spacing: 10px;
+                font-size: 30px;
+                color: rebeccapurple;
+            }
+
+            h1 {
+                font-size: 88px;
+
+                @include mobile {
+                    font-size: 36px;
+                }
+            }
+
+            .buttons {
+                button {
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+
+            img {
+
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include mobile {
+            height: 50%;
+            top: unset;
+            bottom: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        img {
+            height: 150%;
+            padding-right: 50px;
+        }
+
+    }
+
+    .sliddingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -100px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+    }
+
+}

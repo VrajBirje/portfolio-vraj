@@ -1,0 +1,47 @@
+useScroll Hook:
+The useScroll hook is part of the framer-motion library and is used to track the scroll position of a specified target element. In the provided code, the target element is a div with the className 'portfolio', and its scroll position is tracked with the following configuration:
+
+jsx
+Copy code
+const ref = useRef();
+const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "start start"]
+})
+ref Variable:
+
+It's created using the useRef hook to reference the div element with the className 'portfolio'.
+useScroll Hook:
+
+The useScroll hook is then used with the ref to track the scroll position.
+The offset option is an array that defines the start and end positions relative to the viewport for which the scroll position is considered. In this case, it is set to ["end end", "start start"], meaning the scroll position is tracked when the end of the 'portfolio' div reaches the bottom of the viewport and when the start of the 'portfolio' div reaches the top of the viewport.
+scrollYProgress:
+
+This variable contains a value between 0 and 1, representing the progress of the scroll within the specified offset range.
+useSpring Function:
+The useSpring function is used to create a spring animation based on the scroll progress obtained from useScroll. It's applied to the scaleX property of a progress bar element.
+
+jsx
+Copy code
+const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30
+})
+useSpring Function:
+
+It takes two parameters:
+The first parameter is the value you want to animate (scrollYProgress in this case), and
+The second parameter is an options object with animation properties.
+Animation Options:
+
+stiffness: Controls how stiff the spring is. Higher values make the spring stiffer.
+damping: Controls the amount of damping applied to the spring motion. Higher values result in more damping.
+scaleX Variable:
+
+This variable now represents the animated scaleX property based on the scroll position. As the user scrolls, the scaleX value changes, creating a scaling effect on the progress bar.
+Summary:
+In summary, useScroll is used to track the scroll position, and useSpring is used to create a spring animation based on that scroll position. The resulting scaleX variable is applied to the progress bar, creating a visually appealing scaling effect as the user scrolls through the content.
+
+
+
+
