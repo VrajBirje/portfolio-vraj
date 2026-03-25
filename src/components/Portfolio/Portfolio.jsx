@@ -5,38 +5,38 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 const items = [
     {
         id: 1,
-        title: "EPF manager",
-        img: "/people.webp",
-        desc: "Employee provident fund manager was developed for Regional Office Mumbai. A user friendly full stack web application for reading , entering and verifying employee provident fund data. It was a sponsorship project.",
-        link:"https://chipper-bombolone-8ca005.netlify.app" 
+        title: "Reelx Clothing",
+        img: "/ecommerce.webp",
+        desc: "A production ready ecommerce platform built using Next.js, Node.js and PostgreSQL with secure authentication, Razorpay payments and scalable APIs. Integrated an LLM powered assistant for natural language product search and AI driven recommendations.",
+        link: "https://reelxclothing.shop"
     },
     {
         id: 2,
-        title: "Ecommerce App",
-        img: "/ecommerce.webp",
-        desc: "A frontend of an ecommerce application developed using react styled-components. With all the pages in an ecommerce application like product list , register , login , products , home , etc.",
-        link:"https://vrajecommerce.netlify.app/"
+        title: "InternHub",
+        img: "/people.webp",
+        desc: "An AI powered internship platform developed using React.js, Redux, Node.js and MongoDB with MVC architecture. Features include resume analyzer and RAG based job matching system enabling semantic search and personalized recommendations.",
+        link: "https://github.com/VrajBirje/internhub"
     },
     {
         id: 3,
-        title: "Chat App",
-        img: "/chat.jpg",
-        desc: "A full stack mobile chat application. Developed using Flutter and Firebase. With all functionalities like login , register , creating groups , chatting and joining and leaving groups",
-        link:"https://github.com/VrajBirje/Chat-App"
+        title: "SitePilot",
+        img: "/event.jpeg",
+        desc: "A multi tenant SaaS website builder built with MERN stack enabling organizations to create and deploy websites with role based access and scalable APIs. Includes AI workflows using LLMs for automated layout and content generation.",
+        link: "https://github.com/VrajBirje/SitePilot"
     },
     {
         id: 4,
-        title: "Event It",
-        img: "/event.jpeg",
-        desc: "A full stack mobile application for event management. Where event organizations post there events so that other users can discover and participate in those events",
-        link:"https://github.com/VrajBirje/event-it"
+        title: "Webnova Projects",
+        img: "/chat.jpg",
+        desc: "Developed and deployed scalable web applications for businesses including hyperlocal platforms and SaaS products using React, Next.js, Node.js and PostgreSQL. Managed cloud infrastructure on Google Cloud and Hostinger.",
+        link: "https://github.com/VrajBirje"
     },
     {
         id: 5,
-        title: "Recipe App",
+        title: "AI Features",
         img: "/recipe.png",
-        desc: "A full stack Recipe app to using MERN stack authenticate user create recipe , save it and view it. Focussing on the basic CURD operations",
-        link:"https://github.com/VrajBirje/Recipe-App"
+        desc: "Built advanced AI features including LLM based systems, RAG pipelines and prompt engineering workflows enabling intelligent recommendations, semantic search and automated content generation across applications.",
+        link: "https://github.com/VrajBirje"
     },
 ]
 const redirectToSite = (link) => {
@@ -56,8 +56,8 @@ const Single = ({ item }) => {
                 <div className="imageContainer">
                     <img src={item.img} alt="" />
                 </div>
-                <motion.div className="textContainer" 
-                style={{ y: y }}
+                <motion.div className="textContainer"
+                    style={{ y: y }}
                 >
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>

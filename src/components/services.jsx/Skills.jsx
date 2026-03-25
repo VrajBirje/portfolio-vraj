@@ -41,7 +41,7 @@ export const Skills = () => {
   }, []);
   const redirectToSite = (url) => {
     window.location.href = url; // Use the provided URL for redirection
-};
+  };
   return (
     <motion.div className='skills'
       variants={variants}
@@ -52,50 +52,52 @@ export const Skills = () => {
       whileInView={!isMobile && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.p>I focus on creating dynamic websites <br /> and applications</motion.p>
+        <motion.p>I build scalable full-stack applications, <br /> AI-powered systems, and modern web platforms</motion.p>
         <motion.hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <motion.div className="title">
           <motion.img src='/people.webp' alt=''></motion.img>
           <motion.h1>
-            <motion.b whileHover={{ color: "orange" }}>Website</motion.b> Development
+            <motion.b whileHover={{ color: "orange" }}>Full Stack</motion.b> Development
           </motion.h1>
         </motion.div>
         <motion.div className="title">
           <motion.h1>
-            <motion.b whileHover={{ color: "orange" }}>And App</motion.b> Development
+            <motion.b whileHover={{ color: "orange" }}>AI Powered</motion.b> Applications
           </motion.h1>
-          <motion.button>My skills</motion.button>
+          <motion.button>My Skills</motion.button>
         </motion.div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className="box">
-          <motion.h1>MERN Stack</motion.h1>
+          <motion.h1>Programming</motion.h1>
           <motion.p>
-            MERN stack entirely uses JavaScript. MERN stands for MONGODB, EXPRESS, REACT, NODE after the four key technologies that make up the stack.
+            Programming skills include <strong>Python</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>C</strong> and <strong>C++</strong>. These languages form the foundation for building efficient, scalable and high performance applications across domains.
           </motion.p>
-          <motion.button onClick={() => redirectToSite('https://www.mongodb.com/mern-stack')}>GO</motion.button>
+          <motion.button onClick={() => redirectToSite('https://github.com/VrajBirje')}>GO</motion.button>
         </motion.div>
+
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className="box">
-          <motion.h1>Flutter</motion.h1>
+          <motion.h1>Frameworks</motion.h1>
           <motion.p>
-          Flutter is an open-source UI software development kit created by Google, used to develop cross platform applications for iOS, android, etc.
+            Frameworks include <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>Express</strong> and <strong>REST APIs</strong> along with databases like <strong>MongoDB</strong>, <strong>PostgreSQL</strong> and <strong>MySQL</strong> used for building scalable full stack applications.
           </motion.p>
-          <motion.button onClick={() => redirectToSite('https://flutter.dev/')}>GO</motion.button>
+          <motion.button onClick={() => redirectToSite('https://nextjs.org/')}>GO</motion.button>
         </motion.div>
+
         <motion.div
           whileHover={{ background: "lightgray", color: "black" }}
           className="box">
-          <motion.h1>Firebase</motion.h1>
+          <motion.h1>AI & Tools</motion.h1>
           <motion.p>
-          Firebase is a set of backend cloud computing services and application development platforms including Android & iOS  provided by Google. 
+            AI and tools include <strong>LLMs</strong>, <strong>RAG</strong>, <strong>Prompt Engineering</strong> along with <strong>Docker</strong>, <strong>GitHub</strong>, <strong>Google Cloud</strong> and <strong>Postman</strong> which help in building, deploying and managing modern intelligent applications.
           </motion.p>
-          <motion.button onClick={() => redirectToSite('https://firebase.google.com/')}>GO</motion.button>
+          <motion.button onClick={() => redirectToSite('https://cloud.google.com/')}>GO</motion.button>
         </motion.div>
       </motion.div>
     </motion.div>
