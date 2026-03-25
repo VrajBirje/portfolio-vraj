@@ -1,5 +1,5 @@
 import "./app.scss"
-import { Navbar } from "./components/navbar/navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import { Hero } from "./components/hero/hero";
 import { Parallax } from "./components/parallax/Parallax";
 import { Skills } from "./components/services.jsx/Skills";
